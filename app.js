@@ -36,7 +36,7 @@ input.addEventListener("keypress", function (event) {
 });
 
 const app = () => {
-  const nombre = valorInput;
+  const nombre = valorInput.trim();
 
   invitados.forEach((name) => {
     if (name.toLowerCase() === nombre.toLowerCase()) {
