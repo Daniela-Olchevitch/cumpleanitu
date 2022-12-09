@@ -39,7 +39,7 @@ const app = () => {
   const nombre = valorInput;
 
   invitados.forEach((name) => {
-    if (name.toLowerCase() === nombre.toLowerCase().trim()) {
+    if (name.toLowerCase() === nombre.toLowerCase().replaceAll(" ","")) {
       estasInvitado = true;
     }
   });
