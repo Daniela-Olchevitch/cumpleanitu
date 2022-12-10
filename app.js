@@ -17,6 +17,7 @@ btnAceptar.addEventListener("click", function () {
   // Actualizar el valor de la variable con el valor del elemento <input>
   valorInput = input.value;
   if (!valorInput) {
+		mensaje.innerHTML = " ";
     alert("Debe ingresar su nombre");
   } else {
     app();
@@ -27,7 +28,7 @@ input.addEventListener("keypress", function (event) {
   if (event.keyCode === 13) {
     valorInput = input.value;
     if (!valorInput) {
-			mensaje.innerHTML = "";
+			mensaje.innerHTML = " ";
       alert("Debe ingresar su nombre");
     } else {
       app();
@@ -46,24 +47,11 @@ const app = () => {
 
   if (estasInvitado === true) {
     mensaje.innerHTML =
-      "Usted está en la lista!,te espero este Sábado 10 a partir de las 18:00, en Gambetta 1120,esq. Propios,con la temática DISFRACES!";
-			initMap(true);
-			
+      "Estás invitado! Te espero este Sábado 10 a partir de las 18:00,</br> en Gambetta 1120,esq. Propios,con la temática <mark><b>DISFRACES!</b></mark>";
   } else {
     mensaje.innerHTML = "No estas invitado, pa juera";
-		initMap(false);
   }
+
 	estasInvitado = false;
 };
 
-
-function initMap(valor) {
-	if(valor === true){
-		var mapa = new google.maps.Map(document.getElementById('mapa'), {
-			center: {lat: -34.84265403455252, lng: -56.19530370169602},
-			zoom: 8
-		});
-	}else{
-		var mapa = null;
-	}
-}
