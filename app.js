@@ -11,6 +11,8 @@ const invitados = [
   "Damian",
   "Roberto",
   "Sebastian",
+	"Andres",
+	"Ariana"
 ];
 
 btnAceptar.addEventListener("click", function () {

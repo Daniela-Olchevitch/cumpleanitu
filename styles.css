@@ -1,3 +1,68 @@
+
+.boton{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 1rem;
+}
+
+.titulo{
+    margin-top: 3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+.inputNombre{
+    border-radius: 5px;
+    border-color: blueviolet;
+}
+
+body{
+    background-image: url("./images/reyna2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.divPrincipal{
+    display: grid;
+    justify-content: right;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.637);
+    position: absolute;
+    bottom: 0%;
+    width: inherit;
+    justify-content: center;
+}
+
+#msj{
+    display: block;
+    font-size: 1rem;
+    color: rgb(255, 255, 255);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.formulario{
+    margin-top: .5rem;
+    display: flex;
+}
+#info{
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+
+@media only screen and (min-width : 768px) {
+
+   
 .boton{
     width: fit-content;
     height: fit-content;
@@ -30,7 +95,9 @@ body{
 .divPrincipal{
     display: grid;
     justify-content: right;
-    margin-right: 200px;
+    padding-right: 200px;
+    background-color: rgba(240, 248, 255, 0);
+    position: relative;
 }
 
 #msj{
@@ -51,3 +118,4 @@ body{
     font-size: 1.2rem;
     margin-top: 2rem;
 }
+    }
