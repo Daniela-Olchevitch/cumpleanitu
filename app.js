@@ -49,7 +49,7 @@ const app = () => {
 
   if (estasInvitado === true) {
     mensaje.innerHTML =
-      "Estás invitado! Te espero este Sábado 10 a partir de las 18:00,</br> en Gambetta 1120,esq. Propios,con la temática <mark><b>DISFRACES!</b></mark>";
+      "Estás invitado! Te espero este Sábado 10/12 </br>a partir de las 18:00 en Gambetta 1120 esq. Propios,</br>con la temática <mark><b>DISFRACES! :D</b></mark>";
   } else {
     mensaje.innerHTML = "No estas invitado, pa juera";
   }
